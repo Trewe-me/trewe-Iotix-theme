@@ -7,11 +7,11 @@ Description: Iotix provides a great starting point for creating a business or st
 Requires at least: 5.8
 Tested up to: 7.1
 Requires PHP: 7.4
-Version: 1.0.14
+Version: 1.0.13
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: iotix
-Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, rtl-language-support, theme-options, threaded-comments, translation-ready, wide-blocks, style-variations, e-commerce
+Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, rtl-language-support, theme-options, threaded-comments, translation-ready, wide-blocks, style-variations
 */
 
 /*
@@ -71,28 +71,4 @@ a {
 	.iotix-pricing-card--featured:focus-within {
 		transform: none;
 	}
-}
-
-/*
- * WooCommerce: match the theme's own rounded-panel/pill language.
- * Woo's blocks already inherit color and type from theme.json; these
- * rules only bring border-radius and the mini-cart badge in line.
- */
-.wc-block-components-panel,
-.wc-block-components-totals-wrapper,
-.wc-block-checkout__payment-method,
-.wc-block-cart-items,
-.wc-block-components-product-badge {
-	border-radius: 16px;
-}
-
-.wp-block-woocommerce-mini-cart .wc-block-mini-cart__badge,
-.wc-block-mini-cart__badge {
-	background-color: var(--wp--preset--color--foreground);
-	color: var(--wp--preset--color--background);
-}
-
-.wc-block-components-button,
-.wp-block-woocommerce-product-button a {
-	border-radius: 100px !important;
 }

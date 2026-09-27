@@ -12,12 +12,6 @@ Iotix provides a great starting point for creating a business or startup website
 
 == Changelog ==
 
-= 1.0.14 =
-* Added theme-styled WooCommerce templates: Product Archive, Single Product, Cart, Checkout, Product Search Results, and both product taxonomy archives, built on WooCommerce 11's native Product Collection / Cart / Checkout blocks (not the deprecated legacy-template block).
-* Added a mini-cart icon to the header, shown only when WooCommerce is active.
-* Added light CSS touches so WooCommerce's own blocks (order summary panels, buttons, the mini-cart badge) pick up the theme's rounded-corner and color language.
-* Note: built and validated statically (PHP lint, block-comment/JSON structure) without a live WordPress + WooCommerce install available in this environment — recommend one pass of visual QA on a staging site before going live.
-
 = 1.0.13 =
 * Verified compatibility with WordPress 7.1: the theme ships no custom blocks/JS, so the new enforced iframe editor (which requires Block API v3) doesn't affect it; bumped "Tested up to" to 7.1.
 * Audited against WooCommerce 11: no WooCommerce-specific code, hooks, or legacy shortcode/template APIs are used, so nothing in the theme conflicts with WooCommerce 11's removal of legacy cart/checkout shortcodes or HPOS changes. The theme currently has no dedicated WooCommerce templates of its own (see readme notes).
