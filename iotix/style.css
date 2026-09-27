@@ -6,8 +6,8 @@ Author URI: https://automattic.com/
 Description: Iotix provides a great starting point for creating a business or startup website.
 Requires at least: 5.8
 Tested up to: 6.2
-Requires PHP: 5.7
-Version: 1.0.11
+Requires PHP: 7.4
+Version: 1.0.12
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: iotix
@@ -36,4 +36,39 @@ a {
  */
 .wp-block-cover:not(.has-text-color, .is-light) .wp-block-heading:not(.has-text-color) {
 	color: var(--wp--preset--color--white);
+}
+
+/*
+ * Pricing table hover effect (patterns/pricing-table.php).
+ * Lifts the card and deepens its shadow on hover/focus; the featured
+ * (foreground) card lifts slightly more so it keeps standing out.
+ */
+.iotix-pricing-card {
+	transition: transform 0.25s ease, box-shadow 0.25s ease;
+	will-change: transform;
+}
+
+.iotix-pricing-card:hover,
+.iotix-pricing-card:focus-within {
+	transform: translateY(-8px);
+	box-shadow: 0 24px 48px -12px rgba(47, 44, 79, 0.25);
+}
+
+.iotix-pricing-card--featured:hover,
+.iotix-pricing-card--featured:focus-within {
+	transform: translateY(-12px);
+	box-shadow: 0 28px 56px -12px rgba(46, 28, 255, 0.35);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.iotix-pricing-card {
+		transition: none;
+	}
+
+	.iotix-pricing-card:hover,
+	.iotix-pricing-card:focus-within,
+	.iotix-pricing-card--featured:hover,
+	.iotix-pricing-card--featured:focus-within {
+		transform: none;
+	}
 }

@@ -23,8 +23,8 @@
 
 <!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"33.33%"} -->
-<div class="wp-block-column" style="flex-basis:33.33%"><!-- wp:group {"style":{"border":{"radius":"35px"},"spacing":{"padding":{"top":"var:preset|spacing|70","right":"var:preset|spacing|70","bottom":"var:preset|spacing|70","left":"var:preset|spacing|70"},"blockGap":"var:preset|spacing|50"}},"backgroundColor":"background","layout":{"type":"constrained"},"fontSize":"medium"} -->
-<div class="wp-block-group has-background-background-color has-background has-medium-font-size" style="border-radius:35px;padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--70)"><!-- wp:heading {"level":5,"fontSize":"small"} -->
+<div class="wp-block-column" style="flex-basis:33.33%"><!-- wp:group {"className":"iotix-pricing-card","style":{"border":{"radius":"35px"},"spacing":{"padding":{"top":"var:preset|spacing|70","right":"var:preset|spacing|70","bottom":"var:preset|spacing|70","left":"var:preset|spacing|70"},"blockGap":"var:preset|spacing|50"}},"backgroundColor":"background","layout":{"type":"constrained"},"fontSize":"medium"} -->
+<div class="wp-block-group iotix-pricing-card has-background-background-color has-background has-medium-font-size" style="border-radius:35px;padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--70)"><!-- wp:heading {"level":5,"fontSize":"small"} -->
 <h5 class="wp-block-heading has-small-font-size"><?php esc_html_e( 'Intro', 'iotix' ); ?></h5>
 <!-- /wp:heading -->
 
@@ -49,8 +49,8 @@
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"33.33%"} -->
-<div class="wp-block-column" style="flex-basis:33.33%"><!-- wp:group {"style":{"border":{"radius":"35px"},"spacing":{"padding":{"top":"var:preset|spacing|70","right":"var:preset|spacing|70","bottom":"var:preset|spacing|70","left":"var:preset|spacing|70"},"blockGap":"var:preset|spacing|50"}},"backgroundColor":"foreground","layout":{"type":"constrained"},"fontSize":"medium"} -->
-<div class="wp-block-group has-foreground-background-color has-background has-medium-font-size" style="border-radius:35px;padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--70)"><!-- wp:heading {"level":5,"textColor":"tertiary","fontSize":"small"} -->
+<div class="wp-block-column" style="flex-basis:33.33%"><!-- wp:group {"className":"iotix-pricing-card iotix-pricing-card--featured","style":{"border":{"radius":"35px"},"spacing":{"padding":{"top":"var:preset|spacing|70","right":"var:preset|spacing|70","bottom":"var:preset|spacing|70","left":"var:preset|spacing|70"},"blockGap":"var:preset|spacing|50"}},"backgroundColor":"foreground","layout":{"type":"constrained"},"fontSize":"medium"} -->
+<div class="wp-block-group iotix-pricing-card iotix-pricing-card--featured has-foreground-background-color has-background has-medium-font-size" style="border-radius:35px;padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--70)"><!-- wp:heading {"level":5,"textColor":"tertiary","fontSize":"small"} -->
 <h5 class="wp-block-heading has-tertiary-color has-text-color has-small-font-size"><?php esc_html_e( 'Solo (Recommended)', 'iotix' ); ?></h5>
 <!-- /wp:heading -->
 
@@ -75,8 +75,8 @@
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"33.33%"} -->
-<div class="wp-block-column" style="flex-basis:33.33%"><!-- wp:group {"style":{"border":{"radius":"35px"},"spacing":{"padding":{"top":"var:preset|spacing|70","right":"var:preset|spacing|70","bottom":"var:preset|spacing|70","left":"var:preset|spacing|70"},"blockGap":"var:preset|spacing|50"}},"backgroundColor":"background","layout":{"type":"constrained"},"fontSize":"medium"} -->
-<div class="wp-block-group has-background-background-color has-background has-medium-font-size" style="border-radius:35px;padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--70)"><!-- wp:heading {"level":5,"fontSize":"small"} -->
+<div class="wp-block-column" style="flex-basis:33.33%"><!-- wp:group {"className":"iotix-pricing-card","style":{"border":{"radius":"35px"},"spacing":{"padding":{"top":"var:preset|spacing|70","right":"var:preset|spacing|70","bottom":"var:preset|spacing|70","left":"var:preset|spacing|70"},"blockGap":"var:preset|spacing|50"}},"backgroundColor":"background","layout":{"type":"constrained"},"fontSize":"medium"} -->
+<div class="wp-block-group iotix-pricing-card has-background-background-color has-background has-medium-font-size" style="border-radius:35px;padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--70)"><!-- wp:heading {"level":5,"fontSize":"small"} -->
 <h5 class="wp-block-heading has-small-font-size"><?php esc_html_e( 'Teams', 'iotix' ); ?></h5>
 <!-- /wp:heading -->
 

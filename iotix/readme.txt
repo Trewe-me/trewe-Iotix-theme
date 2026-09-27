@@ -2,7 +2,7 @@
 Contributors: Automattic
 Requires at least: 5.8
 Tested up to: 6.2
-Requires PHP: 5.7
+Requires PHP: 7.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -11,6 +11,11 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Iotix provides a great starting point for creating a business or startup website. It offers tailored templates and patterns, including a business landing page, blog, and pricing sections, to help you present yourself and your business more quickly and easily. With Iotix, you can create a professional and polished website that accurately reflects your brand and effectively communicates your message to your target audience.
 
 == Changelog ==
+
+= 1.0.12 =
+* Verified compatibility with PHP 8.1–8.4; corrected the invalid "Requires PHP: 5.7" header (PHP 5.7 was never released) to 7.4.
+* Added pricing table hover effect (lift + shadow) for the Pricing Table pattern.
+* Added AI Aurora, Soft Signal, and Studio Mist gradient presets and set AI Aurora as the default site/blog background.
 
 = 1.0.11 =
 * Iotix theme updates (Beafialho playground changes) (#7945)
