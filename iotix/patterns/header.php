@@ -14,6 +14,10 @@
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
 <div class="wp-block-group" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:navigation {"layout":{"type":"flex","justifyContent":"left","orientation":"horizontal"}} /-->
 
+<?php if ( class_exists( 'WooCommerce' ) ) : ?>
+<!-- wp:woocommerce/mini-cart /-->
+<?php endif; ?>
+
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"fontSize":"small"} -->
 <div class="wp-block-button has-custom-font-size has-small-font-size"><a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Sign In', 'iotix' ); ?></a></div>
