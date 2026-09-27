@@ -1,7 +1,7 @@
 === Iotix ===
 Contributors: Automattic
 Requires at least: 5.8
-Tested up to: 6.2
+Tested up to: 7.1
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -11,6 +11,10 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Iotix provides a great starting point for creating a business or startup website. It offers tailored templates and patterns, including a business landing page, blog, and pricing sections, to help you present yourself and your business more quickly and easily. With Iotix, you can create a professional and polished website that accurately reflects your brand and effectively communicates your message to your target audience.
 
 == Changelog ==
+
+= 1.0.13 =
+* Verified compatibility with WordPress 7.1: the theme ships no custom blocks/JS, so the new enforced iframe editor (which requires Block API v3) doesn't affect it; bumped "Tested up to" to 7.1.
+* Audited against WooCommerce 11: no WooCommerce-specific code, hooks, or legacy shortcode/template APIs are used, so nothing in the theme conflicts with WooCommerce 11's removal of legacy cart/checkout shortcodes or HPOS changes. The theme currently has no dedicated WooCommerce templates of its own (see readme notes).
 
 = 1.0.12 =
 * Verified compatibility with PHP 8.1–8.4; corrected the invalid "Requires PHP: 5.7" header (PHP 5.7 was never released) to 7.4.
