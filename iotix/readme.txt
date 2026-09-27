@@ -12,6 +12,14 @@ Iotix provides a great starting point for creating a business or startup website
 
 == Changelog ==
 
+= 1.0.14 =
+* Fixed: homepage plan labels ("Intro"/"Solo (Recommended)"/"Teams") had `border-radius: 200px;` pasted into their className, producing invalid class tokens that never rendered as the intended pill badge. Replaced with a real `.iotix-plan-badge` class, now also applied on the canonical Pricing Table pattern.
+* Fixed: the homepage pricing section was a hand-duplicated copy of the Pricing Table pattern instead of reusing it, so it had drifted out of sync and didn't get the pricing-card hover effect. It now inserts the shared `iotix/pricing-table` pattern.
+* Added the same hover lift/shadow treatment to the homepage's two feature cards ("No Code Necessary", "Software Support").
+* Redesigned the homepage hero: replaced the stock photo + parallax cover with a gradient-mesh backdrop (built from the theme's own preset colors, so it re-themes with style variations) and two decorative product-UI mockup cards; removed the empty-column layout hack used to center the hero heading.
+* Added automatic dark mode via `prefers-color-scheme`, reusing the palette already shipped as the "Variation 2" style variation.
+* Added a small, progressive-enhancement scroll-reveal (fade/slide-in) on the pricing cards, feature cards, and the "Join the community" section, via a new `assets/js/motion.js`; content stays fully visible without JS, on unsupported browsers, or with reduced-motion preferences.
+
 = 1.0.13 =
 * Verified compatibility with WordPress 7.1: the theme ships no custom blocks/JS, so the new enforced iframe editor (which requires Block API v3) doesn't affect it; bumped "Tested up to" to 7.1.
 * Audited against WooCommerce 11: no WooCommerce-specific code, hooks, or legacy shortcode/template APIs are used, so nothing in the theme conflicts with WooCommerce 11's removal of legacy cart/checkout shortcodes or HPOS changes. The theme currently has no dedicated WooCommerce templates of its own (see readme notes).
