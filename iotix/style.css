@@ -5,9 +5,9 @@ Author: Automattic
 Author URI: https://automattic.com/
 Description: Iotix provides a great starting point for creating a business or startup website.
 Requires at least: 5.8
-Tested up to: 6.2
-Requires PHP: 5.7
-Version: 1.0.11
+Tested up to: 7.1
+Requires PHP: 7.4
+Version: 1.0.17
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: iotix
@@ -36,4 +36,244 @@ a {
  */
 .wp-block-cover:not(.has-text-color, .is-light) .wp-block-heading:not(.has-text-color) {
 	color: var(--wp--preset--color--white);
+}
+
+/*
+ * Pricing table hover effect (patterns/pricing-table.php).
+ * Lifts the card and deepens its shadow on hover/focus; the featured
+ * (foreground) card lifts slightly more so it keeps standing out.
+ */
+.iotix-pricing-card {
+	transition: transform 0.25s ease, box-shadow 0.25s ease;
+	will-change: transform;
+}
+
+.iotix-pricing-card:hover,
+.iotix-pricing-card:focus-within {
+	transform: translateY(-16px);
+	box-shadow: 0 36px 64px -16px rgba(47, 44, 79, 0.35);
+}
+
+.iotix-pricing-card--featured:hover,
+.iotix-pricing-card--featured:focus-within {
+	transform: translateY(-22px);
+	box-shadow: 0 44px 76px -16px rgba(46, 28, 255, 0.45);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.iotix-pricing-card {
+		transition: none;
+	}
+
+	.iotix-pricing-card:hover,
+	.iotix-pricing-card:focus-within,
+	.iotix-pricing-card--featured:hover,
+	.iotix-pricing-card--featured:focus-within {
+		transform: none;
+	}
+}
+
+/*
+ * Homepage feature cards (patterns/home.php: "No Code Necessary",
+ * "Software Support"). Same lift/shadow language as the pricing cards
+ * so the two sections read as one system.
+ */
+.iotix-feature-card {
+	transition: transform 0.25s ease, box-shadow 0.25s ease;
+	box-shadow: 0 1px 2px rgba(47, 44, 79, 0.05), 0 20px 40px -24px rgba(47, 44, 79, 0.35);
+}
+
+.iotix-feature-card:hover,
+.iotix-feature-card:focus-within {
+	transform: translateY(-10px);
+	box-shadow: 0 1px 2px rgba(47, 44, 79, 0.05), 0 32px 56px -20px rgba(46, 28, 255, 0.28);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.iotix-feature-card {
+		transition: none;
+	}
+
+	.iotix-feature-card:hover,
+	.iotix-feature-card:focus-within {
+		transform: none;
+	}
+}
+
+/*
+ * Plan badge pill (patterns/pricing-table.php, patterns/home.php).
+ * Was previously a stray "border-radius: 200px;" string used as a
+ * className, which produced two invalid class tokens and never
+ * rendered. currentColor + color-mix keeps one rule working on every
+ * card background (light or dark) without per-card overrides.
+ */
+.iotix-plan-badge {
+	display: inline-block;
+	padding: 4px 14px;
+	border-radius: 200px;
+	background-color: color-mix(in srgb, currentColor 12%, transparent);
+}
+
+/*
+ * Homepage hero (patterns/header-home.php).
+ * Gradient-mesh backdrop instead of a stock photo + parallax: built
+ * from the theme's own "foreground" and "custom-cover-overlay"
+ * preset colors, so it automatically re-themes with style variations
+ * and stays legible regardless of which palette is active.
+ */
+.iotix-hero {
+	position: relative;
+	overflow: hidden;
+	background:
+		/*
+		 * Flat scrim on top: caps how bright the glow can get when
+		 * "foreground" is a pale color (e.g. Style Variation 3's
+		 * near-white accent), so hero text stays readable no matter
+		 * which style variation is active. Verified against WCAG
+		 * contrast math, not eyeballed.
+		 */
+		linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+		radial-gradient(circle at 15% 15%, color-mix(in srgb, var(--wp--preset--color--foreground) 45%, transparent) 0%, transparent 55%),
+		radial-gradient(circle at 85% 80%, color-mix(in srgb, var(--wp--preset--color--foreground) 30%, transparent) 0%, transparent 50%),
+		var(--wp--preset--color--custom-cover-overlay);
+}
+
+.iotix-hero-content {
+	position: relative;
+	z-index: 1;
+}
+
+/*
+ * Hardcoded (not preset-token) text colors: the hero backdrop is
+ * deliberately always dark, in every style variation and in the
+ * automatic dark mode below, so its text can't be tied to a "background"
+ * or "tertiary" token that flips meaning when the palette does.
+ */
+.iotix-hero-heading {
+	color: #ffffff;
+}
+
+.iotix-hero-subhead {
+	color: rgba(255, 255, 255, 0.78);
+}
+
+/*
+ * Both hero buttons ("Sign In", "Get Started") get their color from
+ * swappable tokens ("background"/"primary" or the theme's default
+ * button colors), and depending on style variation and light/dark
+ * mode that pairing can land close enough to the hero backdrop's own
+ * luminance to fail WCAG 1.4.11 (button fill blends into the hero,
+ * e.g. ~1.2:1 for a dark-mode "Sign In" button). A border that doesn't
+ * depend on any of those tokens guarantees a visible boundary
+ * regardless of which combination is active.
+ */
+.iotix-hero-btn .wp-block-button__link {
+	border: 1.5px solid rgba(255, 255, 255, 0.5);
+}
+
+.iotix-hero-mockups {
+	position: absolute;
+	inset: 0;
+	z-index: 0;
+	pointer-events: none;
+}
+
+.iotix-hero-mockup-card {
+	position: absolute;
+	width: 150px;
+	padding: 14px;
+	border-radius: 14px;
+	background: rgba(255, 255, 255, 0.06);
+	border: 1px solid rgba(255, 255, 255, 0.14);
+	box-shadow: 0 24px 48px rgba(0, 0, 0, 0.35);
+}
+
+.iotix-hero-mockup-card .bar {
+	display: block;
+	height: 9px;
+	width: 70%;
+	border-radius: 5px;
+	background: var(--wp--preset--color--foreground);
+	margin-bottom: 8px;
+}
+
+.iotix-hero-mockup-card .line {
+	display: block;
+	height: 6px;
+	border-radius: 4px;
+	background: rgba(255, 255, 255, 0.25);
+	margin-bottom: 6px;
+}
+
+.iotix-hero-mockup-card .line.short {
+	width: 55%;
+}
+
+.iotix-hero-mockup-card.a {
+	top: 14%;
+	left: 6%;
+	transform: rotate(-6deg);
+}
+
+.iotix-hero-mockup-card.b {
+	bottom: 16%;
+	right: 8%;
+	transform: rotate(5deg);
+}
+
+@media (max-width: 780px) {
+	/* Keep the mobile hero simple; no room for floating decoration. */
+	.iotix-hero-mockups {
+		display: none;
+	}
+}
+
+/*
+ * Automatic dark mode.
+ * Re-maps the same preset colors the theme already ships as
+ * "Variation 2" (styles/variation-2.json), but triggered by the
+ * visitor's system preference instead of a manual Site Editor pick.
+ */
+@media (prefers-color-scheme: dark) {
+	:root {
+		--wp--preset--color--primary: #ffffff;
+		--wp--preset--color--secondary: #85838a;
+		--wp--preset--color--foreground: #f65ef9;
+		--wp--preset--color--background: #161616;
+		--wp--preset--color--tertiary: #221f22;
+	}
+}
+
+/*
+ * Restrained scroll-reveal.
+ * Content is visible by default (a no-JS or unsupported browser sees
+ * the page exactly as before); assets/js/motion.js opts elements into
+ * the fade/slide-in only once it has confirmed IntersectionObserver
+ * support and that the visitor hasn't asked for reduced motion.
+ */
+.iotix-reveal.iotix-reveal-armed {
+	opacity: 0;
+	transform: translateY(20px);
+	transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.iotix-reveal.iotix-reveal-armed.is-visible {
+	opacity: 1;
+	transform: none;
+}
+
+/*
+ * opacity:0 hides content visually but not from the tab order or the
+ * accessibility tree, and every .iotix-reveal element contains a link
+ * or button. A sighted keyboard-only user tabbing through the page can
+ * reach one of those controls before the IntersectionObserver has
+ * revealed it, landing focus on something invisible and offset 20px
+ * from where it belongs (WCAG 2.4.7 Focus Visible). Force an instant,
+ * un-animated reveal the moment focus lands inside, ahead of and
+ * independent of scroll position.
+ */
+.iotix-reveal.iotix-reveal-armed:focus-within {
+	opacity: 1;
+	transform: none;
+	transition: none;
 }

@@ -57,3 +57,30 @@ if ( ! function_exists( 'iotix_styles' ) ) :
 endif;
 
 add_action( 'wp_enqueue_scripts', 'iotix_styles' );
+
+if ( ! function_exists( 'iotix_scripts' ) ) :
+
+	/**
+	 * Enqueue scripts.
+	 *
+	 * @since Iotix 1.0
+	 *
+	 * @return void
+	 */
+	function iotix_scripts() {
+
+		// Restrained scroll-reveal motion for elements marked .iotix-reveal;
+		// see assets/js/motion.js for the progressive-enhancement details.
+		wp_enqueue_script(
+			'iotix-motion',
+			get_template_directory_uri() . '/assets/js/motion.js',
+			array(),
+			wp_get_theme()->get( 'Version' ),
+			true
+		);
+
+	}
+
+endif;
+
+add_action( 'wp_enqueue_scripts', 'iotix_scripts' );

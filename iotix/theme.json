@@ -10,7 +10,23 @@
 			"defaultGradients": true,
 			"defaultPalette": true,
 			"duotone": [],
-			"gradients": [],
+			"gradients": [
+				{
+					"gradient": "linear-gradient(160deg, var(--wp--preset--color--tertiary) 0%, var(--wp--preset--color--background) 100%)",
+					"name": "AI Aurora",
+					"slug": "ai-aurora"
+				},
+				{
+					"gradient": "radial-gradient(circle at 20% 0%, var(--wp--preset--color--tertiary) 0%, var(--wp--preset--color--background) 55%)",
+					"name": "Soft Signal",
+					"slug": "soft-signal"
+				},
+				{
+					"gradient": "linear-gradient(180deg, var(--wp--preset--color--tertiary) 0%, var(--wp--preset--color--background) 45%)",
+					"name": "Studio Mist",
+					"slug": "studio-mist"
+				}
+			],
 			"palette": [
 				{
 					"color": "#2f2c4f",
@@ -672,6 +688,7 @@
 		},
 		"color": {
 			"background": "var(--wp--preset--color--background)",
+			"gradient": "var:preset|gradient|ai-aurora",
 			"text": "var(--wp--preset--color--secondary)"
 		},
 		"css": "\n\n.wp-block-post-terms {\n\tborder-radius: 200px;\n}\n",

@@ -27,7 +27,7 @@
 <p><?php esc_html_e('It looks like nothing was found at this location. Maybe try a search?', 'iotix');?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:search {"label":"","showLabel":false,"placeholder":"Search...","widthUnit":"%","buttonText":"Search","style":{"border":{"radius":"100px"}},"backgroundColor":"foreground"} /--></div>
+<!-- wp:search {"label":"<?php esc_html_e( 'Search', 'iotix' ); ?>","showLabel":false,"placeholder":"<?php esc_html_e( 'Search...', 'iotix' ); ?>","widthUnit":"%","buttonText":"<?php esc_html_e( 'Search', 'iotix' ); ?>","style":{"border":{"radius":"100px"}},"backgroundColor":"foreground"} /--></div>
 <!-- /wp:group -->
 
 <!-- wp:spacer -->

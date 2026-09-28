@@ -9,8 +9,8 @@
 ?>
 <!-- wp:template-part {"slug":"header-home","area":"header"} /-->
 
-<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","right":"5vw","bottom":"var:preset|spacing|70","left":"5vw"}}}} -->
-<div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--70);padding-right:5vw;padding-bottom:var(--wp--preset--spacing--70);padding-left:5vw"><!-- wp:heading {"textAlign":"center"} -->
+<!-- wp:group {"tagName":"main","align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","right":"5vw","bottom":"var:preset|spacing|70","left":"5vw"}}}} -->
+<main class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--70);padding-right:5vw;padding-bottom:var(--wp--preset--spacing--70);padding-left:5vw"><!-- wp:heading {"textAlign":"center"} -->
 <h2 class="wp-block-heading has-text-align-center"><?php esc_html_e('Over 700 teams worldwide rely on Desaign', 'iotix');?></h2>
 <!-- /wp:heading -->
 
@@ -34,14 +34,14 @@
 <!-- wp:image {"width":"200px","height":"auto","sizeSlug":"full","linkDestination":"none"} -->
 <figure class="wp-block-image size-full is-resized"><img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/images/d1cab-logo_5.png" alt="<?php esc_html_e('', 'iotix');?>" class="" style="width:200px;height:auto"/></figure>
 <!-- /wp:image --></div>
-<!-- /wp:group --></div>
+<!-- /wp:group --></main>
 <!-- /wp:group -->
 
 <!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"right":"5vw","left":"5vw"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignwide" style="padding-right:5vw;padding-left:5vw"><!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"50%","style":{"border":{"width":"0px","style":"none"}}} -->
-<div class="wp-block-column" style="border-style:none;border-width:0px;flex-basis:50%"><!-- wp:group {"style":{"border":{"radius":"30px"},"spacing":{"padding":{"top":"var:preset|spacing|70","right":"var:preset|spacing|70","bottom":"var:preset|spacing|70","left":"var:preset|spacing|70"}}},"backgroundColor":"tertiary","layout":{"type":"constrained"}} -->
-<div class="wp-block-group has-tertiary-background-color has-background" style="border-radius:30px;padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--70)"><!-- wp:heading {"level":3} -->
+<div class="wp-block-column" style="border-style:none;border-width:0px;flex-basis:50%"><!-- wp:group {"className":"iotix-feature-card iotix-reveal","style":{"border":{"radius":"30px"},"spacing":{"padding":{"top":"var:preset|spacing|70","right":"var:preset|spacing|70","bottom":"var:preset|spacing|70","left":"var:preset|spacing|70"}}},"backgroundColor":"tertiary","layout":{"type":"constrained"}} -->
+<div class="wp-block-group iotix-feature-card iotix-reveal has-tertiary-background-color has-background" style="border-radius:30px;padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--70)"><!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading"><?php esc_html_e('No Code Necessary', 'iotix');?></h3>
 <!-- /wp:heading -->
 
@@ -60,8 +60,8 @@
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"50%"} -->
-<div class="wp-block-column" style="flex-basis:50%"><!-- wp:group {"style":{"border":{"radius":"30px"},"spacing":{"padding":{"top":"var:preset|spacing|70","right":"var:preset|spacing|70","bottom":"var:preset|spacing|70","left":"var:preset|spacing|70"}}},"backgroundColor":"tertiary","layout":{"type":"constrained"}} -->
-<div class="wp-block-group has-tertiary-background-color has-background" style="border-radius:30px;padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--70)"><!-- wp:heading {"level":3} -->
+<div class="wp-block-column" style="flex-basis:50%"><!-- wp:group {"className":"iotix-feature-card iotix-reveal","style":{"border":{"radius":"30px"},"spacing":{"padding":{"top":"var:preset|spacing|70","right":"var:preset|spacing|70","bottom":"var:preset|spacing|70","left":"var:preset|spacing|70"}}},"backgroundColor":"tertiary","layout":{"type":"constrained"}} -->
+<div class="wp-block-group iotix-feature-card iotix-reveal has-tertiary-background-color has-background" style="border-radius:30px;padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--70)"><!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading"><?php esc_html_e('Software Support', 'iotix');?></h3>
 <!-- /wp:heading -->
 
@@ -103,111 +103,11 @@
 <!-- /wp:group --></div></div>
 <!-- /wp:cover -->
 
-<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"5.06rem","right":"5vw","bottom":"5.06rem","left":"5vw"},"blockGap":"0"}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignwide" style="padding-top:5.06rem;padding-right:5vw;padding-bottom:5.06rem;padding-left:5vw"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignwide"><!-- wp:heading {"textAlign":"center"} -->
-<h2 class="wp-block-heading has-text-align-center"><?php esc_html_e('Our pricing', 'iotix');?></h2>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center"><?php esc_html_e('Our pricing structure is built to be affordable for everyone from individual designers to teams.', 'iotix');?></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:spacer {"height":"20px"} -->
-<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer -->
-
-<!-- wp:columns {"align":"wide"} -->
-<div class="wp-block-columns alignwide"><!-- wp:column {"width":"33.33%"} -->
-<div class="wp-block-column" style="flex-basis:33.33%"><!-- wp:group {"style":{"border":{"radius":"35px"},"spacing":{"padding":{"top":"var:preset|spacing|70","right":"var:preset|spacing|70","bottom":"var:preset|spacing|70","left":"var:preset|spacing|70"},"blockGap":"var:preset|spacing|50"}},"backgroundColor":"tertiary","layout":{"type":"constrained"},"fontSize":"medium"} -->
-<div class="wp-block-group has-tertiary-background-color has-background has-medium-font-size" style="border-radius:35px;padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--70)"><!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
-<div class="wp-block-group"><!-- wp:heading {"level":5,"style":{"typography":{"textTransform":"uppercase","fontSize":"0.8rem"}},"className":"border-radius: 200px;"} -->
-<h5 class="wp-block-heading border-radius: 200px;" style="font-size:0.8rem;text-transform:uppercase"><?php esc_html_e('Intro', 'iotix');?></h5>
-<!-- /wp:heading -->
-
-<!-- wp:heading -->
-<h2 class="wp-block-heading"><?php esc_html_e('Free', 'iotix');?></h2>
-<!-- /wp:heading --></div>
-<!-- /wp:group -->
-
-<!-- wp:paragraph -->
-<p><?php esc_html_e('Good for trying out, or the occassional design project.', 'iotix');?></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p><?php esc_html_e( '— Works with major design software', 'iotix' ); ?><br><?php esc_html_e( '— One project per month', 'iotix' ); ?><br><?php esc_html_e( '— Volunteer forum support', 'iotix' ); ?></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
-<div class="wp-block-buttons"><!-- wp:button {"width":100} -->
-<div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link wp-element-button"><?php esc_html_e('Sign Up', 'iotix');?></a></div>
-<!-- /wp:button --></div>
-<!-- /wp:buttons --></div>
-<!-- /wp:group --></div>
-<!-- /wp:column -->
-
-<!-- wp:column {"width":"33.33%"} -->
-<div class="wp-block-column" style="flex-basis:33.33%"><!-- wp:group {"style":{"border":{"radius":"35px"},"spacing":{"padding":{"top":"var:preset|spacing|70","right":"var:preset|spacing|70","bottom":"var:preset|spacing|70","left":"var:preset|spacing|70"},"blockGap":"var:preset|spacing|50"}},"backgroundColor":"foreground","layout":{"type":"constrained"},"fontSize":"medium"} -->
-<div class="wp-block-group has-foreground-background-color has-background has-medium-font-size" style="border-radius:35px;padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--70)"><!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
-<div class="wp-block-group"><!-- wp:heading {"level":5,"style":{"typography":{"textTransform":"uppercase","fontSize":"0.8rem"},"elements":{"link":{"color":{"text":"var:preset|color|background"}}}},"textColor":"background","className":"border-radius: 200px;"} -->
-<h5 class="wp-block-heading border-radius: 200px; has-background-color has-text-color has-link-color" style="font-size:0.8rem;text-transform:uppercase"><?php esc_html_e('Solo (Recommended)', 'iotix');?></h5>
-<!-- /wp:heading -->
-
-<!-- wp:heading {"style":{"elements":{"link":{"color":{"text":"var:preset|color|tertiary"}}}},"textColor":"tertiary"} -->
-<h2 class="wp-block-heading has-tertiary-color has-text-color has-link-color"><?php esc_html_e('$25', 'iotix');?></h2>
-<!-- /wp:heading --></div>
-<!-- /wp:group -->
-
-<!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|tertiary"}}}},"textColor":"tertiary"} -->
-<p class="has-tertiary-color has-text-color has-link-color"><?php esc_html_e('Great for the professional web or product designer.', 'iotix');?></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|tertiary"}}}},"textColor":"tertiary"} -->
-<p class="has-tertiary-color has-text-color has-link-color"><?php esc_html_e( '— Works with major design software', 'iotix' ); ?><br><?php esc_html_e( '— One project per month', 'iotix' ); ?><br><?php esc_html_e( '— Volunteer forum support', 'iotix' ); ?></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"left"}} -->
-<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"background","textColor":"foreground","width":100,"className":"is-style-fill"} -->
-<div class="wp-block-button has-custom-width wp-block-button__width-100 is-style-fill"><a class="wp-block-button__link has-foreground-color has-background-background-color has-text-color has-background wp-element-button"><?php esc_html_e('Free 15 Day Trial', 'iotix');?></a></div>
-<!-- /wp:button --></div>
-<!-- /wp:buttons --></div>
-<!-- /wp:group --></div>
-<!-- /wp:column -->
-
-<!-- wp:column {"width":"33.33%"} -->
-<div class="wp-block-column" style="flex-basis:33.33%"><!-- wp:group {"style":{"border":{"radius":"35px"},"spacing":{"padding":{"top":"var:preset|spacing|70","right":"var:preset|spacing|70","bottom":"var:preset|spacing|70","left":"var:preset|spacing|70"},"blockGap":"var:preset|spacing|50"}},"backgroundColor":"tertiary","layout":{"type":"constrained"},"fontSize":"medium"} -->
-<div class="wp-block-group has-tertiary-background-color has-background has-medium-font-size" style="border-radius:35px;padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--70)"><!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
-<div class="wp-block-group"><!-- wp:heading {"level":5,"style":{"typography":{"textTransform":"uppercase","fontSize":"0.8rem"}},"className":"border-radius: 200px;"} -->
-<h5 class="wp-block-heading border-radius: 200px;" style="font-size:0.8rem;text-transform:uppercase"><?php esc_html_e('Teams', 'iotix');?></h5>
-<!-- /wp:heading -->
-
-<!-- wp:heading -->
-<h2 class="wp-block-heading"><?php esc_html_e('$50', 'iotix');?></h2>
-<!-- /wp:heading --></div>
-<!-- /wp:group -->
-
-<!-- wp:paragraph -->
-<p><?php esc_html_e('Perfect for agencies and product teams.', 'iotix');?></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p><?php esc_html_e( '— Works with major design software', 'iotix' ); ?><br><?php esc_html_e( '— One project per month', 'iotix' ); ?><br><?php esc_html_e( '— Volunteer forum support', 'iotix' ); ?></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
-<div class="wp-block-buttons"><!-- wp:button {"width":100,"className":"aligncenter is-style-fill"} -->
-<div class="wp-block-button has-custom-width wp-block-button__width-100 aligncenter is-style-fill"><a class="wp-block-button__link wp-element-button"><?php esc_html_e('Free 15 Day Trial', 'iotix');?></a></div>
-<!-- /wp:button --></div>
-<!-- /wp:buttons --></div>
-<!-- /wp:group --></div>
-<!-- /wp:column --></div>
-<!-- /wp:columns --></div>
-<!-- /wp:group --></div>
-<!-- /wp:group -->
+<!-- wp:pattern {"slug":"iotix/pricing-table"} /-->
 
 <!-- wp:group {"align":"full","style":{"border":{"radius":"57px"},"spacing":{"padding":{"right":"5vw","left":"5vw"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull" style="border-radius:57px;padding-right:5vw;padding-left:5vw"><!-- wp:group {"align":"wide","style":{"border":{"radius":"30px"},"spacing":{"padding":{"top":"4rem","right":"4rem","bottom":"4rem","left":"4rem"}}},"backgroundColor":"primary","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignwide has-primary-background-color has-background" style="border-radius:30px;padding-top:4rem;padding-right:4rem;padding-bottom:4rem;padding-left:4rem"><!-- wp:columns {"align":"wide","style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"},"blockGap":{"top":"var:preset|spacing|70","left":"var:preset|spacing|70"}}}} -->
+<div class="wp-block-group alignfull" style="border-radius:57px;padding-right:5vw;padding-left:5vw"><!-- wp:group {"className":"iotix-reveal","align":"wide","style":{"border":{"radius":"30px"},"spacing":{"padding":{"top":"4rem","right":"4rem","bottom":"4rem","left":"4rem"}}},"backgroundColor":"primary","layout":{"type":"constrained"}} -->
+<div class="wp-block-group iotix-reveal alignwide has-primary-background-color has-background" style="border-radius:30px;padding-top:4rem;padding-right:4rem;padding-bottom:4rem;padding-left:4rem"><!-- wp:columns {"align":"wide","style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"},"blockGap":{"top":"var:preset|spacing|70","left":"var:preset|spacing|70"}}}} -->
 <div class="wp-block-columns alignwide" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:image {"sizeSlug":"full","linkDestination":"none","style":{"border":{"radius":"12px"}}} -->
 <figure class="wp-block-image size-full has-custom-border"><img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/images/a39e1-woman-developers-fvwlqxwz1p.webp" alt="<?php esc_html_e('', 'iotix');?>" class="" style="border-radius:12px"/></figure>
