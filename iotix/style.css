@@ -7,7 +7,7 @@ Description: Iotix provides a great starting point for creating a business or st
 Requires at least: 5.8
 Tested up to: 7.1
 Requires PHP: 7.4
-Version: 1.0.15
+Version: 1.0.16
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: iotix
@@ -260,4 +260,20 @@ a {
 .iotix-reveal.iotix-reveal-armed.is-visible {
 	opacity: 1;
 	transform: none;
+}
+
+/*
+ * opacity:0 hides content visually but not from the tab order or the
+ * accessibility tree, and every .iotix-reveal element contains a link
+ * or button. A sighted keyboard-only user tabbing through the page can
+ * reach one of those controls before the IntersectionObserver has
+ * revealed it, landing focus on something invisible and offset 20px
+ * from where it belongs (WCAG 2.4.7 Focus Visible). Force an instant,
+ * un-animated reveal the moment focus lands inside, ahead of and
+ * independent of scroll position.
+ */
+.iotix-reveal.iotix-reveal-armed:focus-within {
+	opacity: 1;
+	transform: none;
+	transition: none;
 }

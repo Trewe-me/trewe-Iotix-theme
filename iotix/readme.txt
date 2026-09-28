@@ -12,6 +12,10 @@ Iotix provides a great starting point for creating a business or startup website
 
 == Changelog ==
 
+= 1.0.16 =
+* Fixed a keyboard focus-visibility bug in the scroll-reveal effect: elements were hidden with `opacity: 0`, which hides content visually but leaves it in the tab order, so a keyboard-only user could tab onto a link/button inside a pricing card, feature card, or the community CTA before it had scrolled into view and been revealed — landing focus on something invisible (WCAG 2.4.7 Focus Visible). `.iotix-reveal-armed:focus-within` now forces an instant, un-animated reveal the moment focus lands inside, independent of scroll position.
+* Audited all other `:hover` styling added in this pass (pricing/feature cards) and confirmed each has a matching `:focus-within`; also confirmed no rule anywhere in the theme suppresses the browser's default focus outline on links, so pre-existing hover-only link styles (post title, site title, navigation, etc.) still have a visible keyboard focus indicator even without a custom `:focus` style.
+
 = 1.0.15 =
 * Fixed hero accessibility contrast, checked against WCAG contrast-ratio math rather than by eye:
   - The hero subheading failed 4.5:1 (3.02:1) when Style Variation 3's near-white accent color tints the hero's glow. Added a fixed-darkness scrim to the hero background that caps peak brightness regardless of which style variation is active; heading now 7.5:1, subheading 5.4:1 in that same worst case.
