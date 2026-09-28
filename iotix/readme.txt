@@ -12,6 +12,11 @@ Iotix provides a great starting point for creating a business or startup website
 
 == Changelog ==
 
+= 1.0.15 =
+* Fixed hero accessibility contrast, checked against WCAG contrast-ratio math rather than by eye:
+  - The hero subheading failed 4.5:1 (3.02:1) when Style Variation 3's near-white accent color tints the hero's glow. Added a fixed-darkness scrim to the hero background that caps peak brightness regardless of which style variation is active; heading now 7.5:1, subheading 5.4:1 in that same worst case.
+  - The "Sign In" button in automatic dark mode failed the 3:1 non-text-contrast requirement against the hero backdrop (1.23:1, effectively invisible). Same issue in reverse for "Get Started" in light mode (1.91:1). Both hero buttons now have a fixed, token-independent border so their boundary is always visible regardless of style variation or light/dark mode.
+
 = 1.0.14 =
 * Fixed: homepage plan labels ("Intro"/"Solo (Recommended)"/"Teams") had `border-radius: 200px;` pasted into their className, producing invalid class tokens that never rendered as the intended pill badge. Replaced with a real `.iotix-plan-badge` class, now also applied on the canonical Pricing Table pattern.
 * Fixed: the homepage pricing section was a hand-duplicated copy of the Pricing Table pattern instead of reusing it, so it had drifted out of sync and didn't get the pricing-card hover effect. It now inserts the shared `iotix/pricing-table` pattern.

@@ -7,7 +7,7 @@ Description: Iotix provides a great starting point for creating a business or st
 Requires at least: 5.8
 Tested up to: 7.1
 Requires PHP: 7.4
-Version: 1.0.14
+Version: 1.0.15
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: iotix
@@ -125,6 +125,14 @@ a {
 	position: relative;
 	overflow: hidden;
 	background:
+		/*
+		 * Flat scrim on top: caps how bright the glow can get when
+		 * "foreground" is a pale color (e.g. Style Variation 3's
+		 * near-white accent), so hero text stays readable no matter
+		 * which style variation is active. Verified against WCAG
+		 * contrast math, not eyeballed.
+		 */
+		linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
 		radial-gradient(circle at 15% 15%, color-mix(in srgb, var(--wp--preset--color--foreground) 45%, transparent) 0%, transparent 55%),
 		radial-gradient(circle at 85% 80%, color-mix(in srgb, var(--wp--preset--color--foreground) 30%, transparent) 0%, transparent 50%),
 		var(--wp--preset--color--custom-cover-overlay);
@@ -147,6 +155,20 @@ a {
 
 .iotix-hero-subhead {
 	color: rgba(255, 255, 255, 0.78);
+}
+
+/*
+ * Both hero buttons ("Sign In", "Get Started") get their color from
+ * swappable tokens ("background"/"primary" or the theme's default
+ * button colors), and depending on style variation and light/dark
+ * mode that pairing can land close enough to the hero backdrop's own
+ * luminance to fail WCAG 1.4.11 (button fill blends into the hero,
+ * e.g. ~1.2:1 for a dark-mode "Sign In" button). A border that doesn't
+ * depend on any of those tokens guarantees a visible boundary
+ * regardless of which combination is active.
+ */
+.iotix-hero-btn .wp-block-button__link {
+	border: 1.5px solid rgba(255, 255, 255, 0.5);
 }
 
 .iotix-hero-mockups {

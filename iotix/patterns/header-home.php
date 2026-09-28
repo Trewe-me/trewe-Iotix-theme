@@ -25,8 +25,8 @@
 <div class="wp-block-group has-link-color" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:navigation {"overlayBackgroundColor":"primary","overlayTextColor":"tertiary"} /-->
 
 <!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"background","textColor":"primary","className":"is-style-fill","fontSize":"small"} -->
-<div class="wp-block-button has-custom-font-size is-style-fill has-small-font-size"><a class="wp-block-button__link has-primary-color has-background-background-color has-text-color has-background wp-element-button"><?php esc_html_e( 'Sign In', 'iotix' ); ?></a></div>
+<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"background","textColor":"primary","className":"is-style-fill iotix-hero-btn","fontSize":"small"} -->
+<div class="wp-block-button has-custom-font-size is-style-fill iotix-hero-btn has-small-font-size"><a class="wp-block-button__link has-primary-color has-background-background-color has-text-color has-background wp-element-button"><?php esc_html_e( 'Sign In', 'iotix' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
@@ -42,8 +42,8 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
-<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-fill"} -->
-<div class="wp-block-button is-style-fill"><a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Get Started', 'iotix' ); ?></a></div>
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-fill iotix-hero-btn"} -->
+<div class="wp-block-button is-style-fill iotix-hero-btn"><a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Get Started', 'iotix' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
