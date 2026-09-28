@@ -26,7 +26,7 @@
 <h4 class="wp-block-heading has-medium-font-size"><?php esc_html_e( 'Product', 'iotix' ); ?></h4>
 <!-- /wp:heading -->
 
-<!-- wp:navigation {"overlayMenu":"never","align":"wide","layout":{"type":"flex","flexWrap":"wrap","orientation":"vertical"},"style":{"spacing":{"blockGap":"var:preset|spacing|20"}}} /--></div>
+<!-- wp:navigation {"ariaLabel":"<?php esc_attr_e( 'Product', 'iotix' ); ?>","overlayMenu":"never","align":"wide","layout":{"type":"flex","flexWrap":"wrap","orientation":"vertical"},"style":{"spacing":{"blockGap":"var:preset|spacing|20"}}} /--></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"verticalAlignment":"top"} -->
@@ -34,7 +34,7 @@
 <h4 class="wp-block-heading has-medium-font-size"><?php esc_html_e('Company', 'iotix'); ?></h4>
 <!-- /wp:heading -->
 
-<!-- wp:navigation {"overlayMenu":"never","align":"wide","layout":{"type":"flex","flexWrap":"wrap","orientation":"vertical"},"style":{"spacing":{"blockGap":"var:preset|spacing|20"}}} /--></div>
+<!-- wp:navigation {"ariaLabel":"<?php esc_attr_e( 'Company', 'iotix' ); ?>","overlayMenu":"never","align":"wide","layout":{"type":"flex","flexWrap":"wrap","orientation":"vertical"},"style":{"spacing":{"blockGap":"var:preset|spacing|20"}}} /--></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"verticalAlignment":"top"} -->
@@ -42,7 +42,7 @@
 <h4 class="wp-block-heading has-medium-font-size"><?php esc_html_e('Resources', 'iotix'); ?></h4>
 <!-- /wp:heading -->
 
-<!-- wp:navigation {"overlayMenu":"never","align":"wide","layout":{"type":"flex","flexWrap":"wrap","orientation":"vertical"},"style":{"spacing":{"blockGap":"var:preset|spacing|20"}}} /--></div>
+<!-- wp:navigation {"ariaLabel":"<?php esc_attr_e( 'Resources', 'iotix' ); ?>","overlayMenu":"never","align":"wide","layout":{"type":"flex","flexWrap":"wrap","orientation":"vertical"},"style":{"spacing":{"blockGap":"var:preset|spacing|20"}}} /--></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
 <!-- /wp:group -->
@@ -63,7 +63,7 @@
 ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:navigation {"overlayMenu":"never","layout":{"type":"flex","orientation":"horizontal"},"style":{"spacing":{"blockGap":"var:preset|spacing|40"}}} /--></div>
+<!-- wp:navigation {"ariaLabel":"<?php esc_attr_e( 'Footer', 'iotix' ); ?>","overlayMenu":"never","layout":{"type":"flex","orientation":"horizontal"},"style":{"spacing":{"blockGap":"var:preset|spacing|40"}}} /--></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->

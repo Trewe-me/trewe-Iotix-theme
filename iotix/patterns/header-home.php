@@ -22,7 +22,7 @@
 <div class="wp-block-group alignwide" style="padding-top:40px;padding-right:0;padding-bottom:40px;padding-left:0"><!-- wp:site-title /-->
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}},"elements":{"link":{"color":{"text":"var:preset|color|background"}}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-<div class="wp-block-group has-link-color" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:navigation {"overlayBackgroundColor":"primary","overlayTextColor":"tertiary"} /-->
+<div class="wp-block-group has-link-color" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:navigation {"ariaLabel":"<?php esc_attr_e( 'Primary', 'iotix' ); ?>","overlayBackgroundColor":"primary","overlayTextColor":"tertiary"} /-->
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"background","textColor":"primary","className":"is-style-fill iotix-hero-btn","fontSize":"small"} -->

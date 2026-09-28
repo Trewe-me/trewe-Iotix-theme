@@ -12,6 +12,13 @@ Iotix provides a great starting point for creating a business or startup website
 
 == Changelog ==
 
+= 1.0.17 =
+* Full-theme accessibility audit beyond the homepage/hero. Three real findings, all fixed:
+  - Three whole page types had no `<main>` landmark at all: the blog archive (`archive.html`), the homepage (`home.php`), and search results (`search.php`). Added one, matching the convention already used correctly in `index.html`/`page.html`/`single.php`. (Homepage main only wraps its first content section, matching `single.php`'s existing pattern, rather than restructuring the whole page.)
+  - The 404 page's search field had an explicitly empty accessible label (`"label":""`) plus hardcoded, untranslated strings, unlike the matching search field on the search-results page. Fixed both.
+  - Six `<nav>` landmarks across the header and footer (2 alternate primary navs, "Product"/"Company"/"Resources" footer columns, footer link row) had no way to tell them apart for screen-reader landmark navigation. Added a distinct `ariaLabel` to each.
+* Reviewed every image in the theme for alt text: all of them use empty `alt=""`. The hero/cover/decorative photos are correctly decorative. The five client logos under "Over 700 teams worldwide rely on Desaign" are a content judgment call rather than a code bug — empty alt is defensible since the heading text already conveys the equivalent claim, but if these represent specific real companies, each should get its own descriptive alt text once real logos are in place.
+
 = 1.0.16 =
 * Fixed a keyboard focus-visibility bug in the scroll-reveal effect: elements were hidden with `opacity: 0`, which hides content visually but leaves it in the tab order, so a keyboard-only user could tab onto a link/button inside a pricing card, feature card, or the community CTA before it had scrolled into view and been revealed — landing focus on something invisible (WCAG 2.4.7 Focus Visible). `.iotix-reveal-armed:focus-within` now forces an instant, un-animated reveal the moment focus lands inside, independent of scroll position.
 * Audited all other `:hover` styling added in this pass (pricing/feature cards) and confirmed each has a matching `:focus-within`; also confirmed no rule anywhere in the theme suppresses the browser's default focus outline on links, so pre-existing hover-only link styles (post title, site title, navigation, etc.) still have a visible keyboard focus indicator even without a custom `:focus` style.

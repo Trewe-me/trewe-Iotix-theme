@@ -9,8 +9,8 @@
 ?>
 <!-- wp:template-part {"slug":"header-home","area":"header"} /-->
 
-<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","right":"5vw","bottom":"var:preset|spacing|70","left":"5vw"}}}} -->
-<div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--70);padding-right:5vw;padding-bottom:var(--wp--preset--spacing--70);padding-left:5vw"><!-- wp:heading {"textAlign":"center"} -->
+<!-- wp:group {"tagName":"main","align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","right":"5vw","bottom":"var:preset|spacing|70","left":"5vw"}}}} -->
+<main class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--70);padding-right:5vw;padding-bottom:var(--wp--preset--spacing--70);padding-left:5vw"><!-- wp:heading {"textAlign":"center"} -->
 <h2 class="wp-block-heading has-text-align-center"><?php esc_html_e('Over 700 teams worldwide rely on Desaign', 'iotix');?></h2>
 <!-- /wp:heading -->
 
@@ -34,7 +34,7 @@
 <!-- wp:image {"width":"200px","height":"auto","sizeSlug":"full","linkDestination":"none"} -->
 <figure class="wp-block-image size-full is-resized"><img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/images/d1cab-logo_5.png" alt="<?php esc_html_e('', 'iotix');?>" class="" style="width:200px;height:auto"/></figure>
 <!-- /wp:image --></div>
-<!-- /wp:group --></div>
+<!-- /wp:group --></main>
 <!-- /wp:group -->
 
 <!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"right":"5vw","left":"5vw"}}},"layout":{"type":"constrained"}} -->
