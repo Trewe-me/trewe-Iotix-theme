@@ -1,8 +1,8 @@
 <?php declare( strict_types = 1 ); ?>
 <?php
 /**
- * Title: Startup 
- * slug: iotix/startup
+ * Title: Startup
+ * slug: trewe-iotix/startup
  * categories: featured
  */
 
@@ -10,7 +10,7 @@
 
 <!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","right":"var:preset|spacing|50","bottom":"var:preset|spacing|70","left":"var:preset|spacing|50"}}}} -->
 <div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--50)"><!-- wp:heading {"textAlign":"center","textColor":"primary"} -->
-<h2 class="wp-block-heading has-text-align-center has-primary-color has-text-color"><?php esc_html_e( 'Over 700 teams worldwide rely on Desaign', 'iotix' ); ?></h2>
+<h2 class="wp-block-heading has-text-align-center has-primary-color has-text-color"><?php esc_html_e( 'Over 700 teams worldwide rely on Desaign', 'trewe-iotix' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"center"}} -->
@@ -41,11 +41,11 @@
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"50%","style":{"border":{"width":"0px","style":"none"}}} -->
 <div class="wp-block-column" style="border-style:none;border-width:0px;flex-basis:50%"><!-- wp:group {"style":{"border":{"radius":"30px"},"spacing":{"padding":{"top":"var:preset|spacing|70","right":"var:preset|spacing|70","bottom":"var:preset|spacing|70","left":"var:preset|spacing|70"}}},"backgroundColor":"background","layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-background-background-color has-background" style="border-radius:30px;padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--70)"><!-- wp:heading -->
-<h2 class="wp-block-heading"><strong><?php esc_html_e( 'No Code Necessary', 'iotix' ); ?></strong></h2>
+<h2 class="wp-block-heading"><strong><?php esc_html_e( 'No Code Necessary', 'trewe-iotix' ); ?></strong></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"fontSize":"medium"} -->
-<p class="has-medium-font-size"><?php esc_html_e( 'Not a programmer? Use our intuitive, designer-first UI.', 'iotix' ); ?></p>
+<p class="has-medium-font-size"><?php esc_html_e( 'Not a programmer? Use our intuitive, designer-first UI.', 'trewe-iotix' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"sizeSlug":"large","linkDestination":"none","className":"is-style-default"} -->
@@ -53,7 +53,7 @@
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"fontSize":"medium"} -->
-<p class="has-medium-font-size"><a href="<?php echo esc_url('https://iotixdemo.wordpress.com/', 'iotix');?>"><?php esc_html_e( 'Try a demo →', 'iotix' ); ?></a></p>
+<p class="has-medium-font-size"><a href="<?php echo esc_url( 'https://iotixdemo.wordpress.com/' ); ?>"><?php esc_html_e( 'Try a demo →', 'trewe-iotix' ); ?></a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column -->
@@ -61,11 +61,11 @@
 <!-- wp:column {"width":"50%"} -->
 <div class="wp-block-column" style="flex-basis:50%"><!-- wp:group {"style":{"border":{"radius":"30px"},"spacing":{"padding":{"top":"var:preset|spacing|70","right":"var:preset|spacing|70","bottom":"var:preset|spacing|70","left":"var:preset|spacing|70"}}},"backgroundColor":"background","layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-background-background-color has-background" style="border-radius:30px;padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--70)"><!-- wp:heading -->
-<h2 class="wp-block-heading"><strong><?php esc_html_e( 'Software Support', 'iotix' ); ?></strong></h2>
+<h2 class="wp-block-heading"><strong><?php esc_html_e( 'Software Support', 'trewe-iotix' ); ?></strong></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"fontSize":"medium"} -->
-<p class="has-medium-font-size"><?php esc_html_e( 'Compatible with all of your favourite design programs.', 'iotix' ); ?></p>
+<p class="has-medium-font-size"><?php esc_html_e( 'Compatible with all of your favourite design programs.', 'trewe-iotix' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
@@ -73,7 +73,7 @@
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"fontSize":"medium"} -->
-<p class="has-medium-font-size"><a href="<?php echo esc_url('https://iotixdemo.wordpress.com/', 'iotix');?>"><?php esc_html_e( 'See support programs →', 'iotix' ); ?></a></p>
+<p class="has-medium-font-size"><a href="<?php echo esc_url( 'https://iotixdemo.wordpress.com/' ); ?>"><?php esc_html_e( 'See support programs →', 'trewe-iotix' ); ?></a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>
@@ -87,22 +87,22 @@
 <!-- wp:cover {"url":"<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/images/92de6-startup-hero-03.webp","dimRatio":80,"overlayColor":"primary","align":"wide"} -->
 <div class="wp-block-cover alignwide"><span aria-hidden="true" class="wp-block-cover__background has-primary-background-color has-background-dim-80 has-background-dim"></span><img class="wp-block-cover__image-background" alt="" src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/images/92de6-startup-hero-03.webp" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"spacing":{"padding":{"top":"10rem","right":"0","bottom":"10rem","left":"0"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group" style="padding-top:10rem;padding-right:0;padding-bottom:10rem;padding-left:0"><!-- wp:heading {"textAlign":"center","align":"wide","textColor":"tertiary"} -->
-<h2 class="wp-block-heading alignwide has-text-align-center has-tertiary-color has-text-color"><?php esc_html_e( 'Keep learning as you go.', 'iotix' ); ?></h2>
+<h2 class="wp-block-heading alignwide has-text-align-center has-tertiary-color has-text-color"><?php esc_html_e( 'Keep learning as you go.', 'trewe-iotix' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center","textColor":"background","fontSize":"medium"} -->
-<p class="has-text-align-center has-background-color has-text-color has-medium-font-size"><?php esc_html_e( 'Want to be first in line to learn tips and tricks for supercharging your mockups with Desaign? There are many helpful resources in our blog.', 'iotix' ); ?></p>
+<p class="has-text-align-center has-background-color has-text-color has-medium-font-size"><?php esc_html_e( 'Want to be first in line to learn tips and tricks for supercharging your mockups with Desaign? There are many helpful resources in our blog.', 'trewe-iotix' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
 <div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Read Our Blog', 'iotix' ); ?></a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Read Our Blog', 'trewe-iotix' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div></div>
 <!-- /wp:cover -->
 
-<!-- wp:pattern {"slug":"iotix/pricing-table"} /-->
+<!-- wp:pattern {"slug":"trewe-iotix/pricing-table"} /-->
 
 <!-- wp:group {"align":"full","style":{"border":{"radius":"57px"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull" style="border-radius:57px"><!-- wp:group {"align":"wide","style":{"border":{"radius":"30px"},"spacing":{"padding":{"top":"var:preset|spacing|70","right":"var:preset|spacing|70","bottom":"var:preset|spacing|70","left":"var:preset|spacing|70"}}},"backgroundColor":"primary","layout":{"type":"constrained"}} -->
@@ -115,16 +115,16 @@
 
 <!-- wp:column {"verticalAlignment":"center"} -->
 <div class="wp-block-column is-vertically-aligned-center"><!-- wp:heading {"textColor":"tertiary","fontSize":"large"} -->
-<h2 class="wp-block-heading has-tertiary-color has-text-color has-large-font-size"><strong><?php esc_html_e( 'Join the community', 'iotix' ); ?></strong></h2>
+<h2 class="wp-block-heading has-tertiary-color has-text-color has-large-font-size"><strong><?php esc_html_e( 'Join the community', 'trewe-iotix' ); ?></strong></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"textColor":"background","fontSize":"medium"} -->
-<p class="has-background-color has-text-color has-medium-font-size"><?php esc_html_e( 'A caring designer community to share knowledge with.', 'iotix' ); ?></p>
+<p class="has-background-color has-text-color has-medium-font-size"><?php esc_html_e( 'A caring designer community to share knowledge with.', 'trewe-iotix' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"background","textColor":"foreground","fontSize":"medium"} -->
-<div class="wp-block-button has-custom-font-size has-medium-font-size"><a class="wp-block-button__link has-foreground-color has-background-background-color has-text-color has-background wp-element-button"><?php esc_html_e( 'Visit forums', 'iotix' ); ?></a></div>
+<div class="wp-block-button has-custom-font-size has-medium-font-size"><a class="wp-block-button__link has-foreground-color has-background-background-color has-text-color has-background wp-element-button"><?php esc_html_e( 'Visit forums', 'trewe-iotix' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column --></div>

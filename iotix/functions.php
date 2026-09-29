@@ -1,11 +1,13 @@
 <?php declare( strict_types = 1 ); ?>
 <?php
 /**
- * Iotix functions and definitions
+ * Trewe Iotix functions and definitions
+ *
+ * Trewe Iotix is a Trewe-maintained fork of Automattic's Iotix theme.
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package Iotix
+ * @package Trewe_Iotix
  * @since Iotix 1.0
  */
 
