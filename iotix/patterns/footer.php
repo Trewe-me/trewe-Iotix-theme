@@ -2,7 +2,7 @@
 <?php
 /**
  * Title: footer
- * Slug: iotix/footer
+ * Slug: trewe-iotix/footer
  * Categories: hidden
  * Inserter: no
  */
@@ -23,26 +23,26 @@
 <!-- wp:columns {"verticalAlignment":"top","isStackedOnMobile":false,"align":"wide","style":{"layout":{"selfStretch":"fill","flexSize":null}}} -->
 <div class="wp-block-columns alignwide are-vertically-aligned-top is-not-stacked-on-mobile"><!-- wp:column {"verticalAlignment":"top"} -->
 <div class="wp-block-column is-vertically-aligned-top"><!-- wp:heading {"level":4,"fontSize":"medium"} -->
-<h4 class="wp-block-heading has-medium-font-size"><?php esc_html_e( 'Product', 'iotix' ); ?></h4>
+<h4 class="wp-block-heading has-medium-font-size"><?php esc_html_e( 'Product', 'trewe-iotix' ); ?></h4>
 <!-- /wp:heading -->
 
-<!-- wp:navigation {"ariaLabel":"<?php esc_attr_e( 'Product', 'iotix' ); ?>","overlayMenu":"never","align":"wide","layout":{"type":"flex","flexWrap":"wrap","orientation":"vertical"},"style":{"spacing":{"blockGap":"var:preset|spacing|20"}}} /--></div>
+<!-- wp:navigation {"ariaLabel":"<?php esc_attr_e( 'Product', 'trewe-iotix' ); ?>","overlayMenu":"never","align":"wide","layout":{"type":"flex","flexWrap":"wrap","orientation":"vertical"},"style":{"spacing":{"blockGap":"var:preset|spacing|20"}}} /--></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"verticalAlignment":"top"} -->
 <div class="wp-block-column is-vertically-aligned-top"><!-- wp:heading {"level":4,"fontSize":"medium"} -->
-<h4 class="wp-block-heading has-medium-font-size"><?php esc_html_e('Company', 'iotix'); ?></h4>
+<h4 class="wp-block-heading has-medium-font-size"><?php esc_html_e( 'Company', 'trewe-iotix' ); ?></h4>
 <!-- /wp:heading -->
 
-<!-- wp:navigation {"ariaLabel":"<?php esc_attr_e( 'Company', 'iotix' ); ?>","overlayMenu":"never","align":"wide","layout":{"type":"flex","flexWrap":"wrap","orientation":"vertical"},"style":{"spacing":{"blockGap":"var:preset|spacing|20"}}} /--></div>
+<!-- wp:navigation {"ariaLabel":"<?php esc_attr_e( 'Company', 'trewe-iotix' ); ?>","overlayMenu":"never","align":"wide","layout":{"type":"flex","flexWrap":"wrap","orientation":"vertical"},"style":{"spacing":{"blockGap":"var:preset|spacing|20"}}} /--></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"verticalAlignment":"top"} -->
 <div class="wp-block-column is-vertically-aligned-top"><!-- wp:heading {"level":4,"fontSize":"medium"} -->
-<h4 class="wp-block-heading has-medium-font-size"><?php esc_html_e('Resources', 'iotix'); ?></h4>
+<h4 class="wp-block-heading has-medium-font-size"><?php esc_html_e( 'Resources', 'trewe-iotix' ); ?></h4>
 <!-- /wp:heading -->
 
-<!-- wp:navigation {"ariaLabel":"<?php esc_attr_e( 'Resources', 'iotix' ); ?>","overlayMenu":"never","align":"wide","layout":{"type":"flex","flexWrap":"wrap","orientation":"vertical"},"style":{"spacing":{"blockGap":"var:preset|spacing|20"}}} /--></div>
+<!-- wp:navigation {"ariaLabel":"<?php esc_attr_e( 'Resources', 'trewe-iotix' ); ?>","overlayMenu":"never","align":"wide","layout":{"type":"flex","flexWrap":"wrap","orientation":"vertical"},"style":{"spacing":{"blockGap":"var:preset|spacing|20"}}} /--></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
 <!-- /wp:group -->
@@ -53,17 +53,19 @@
 
 <!-- wp:group {"align":"full","style":{"typography":{"fontSize":"0.8rem"},"spacing":{"blockGap":"20px"}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"top"}} -->
 <div class="wp-block-group alignfull" style="font-size:0.8rem"><!-- wp:paragraph {"align":"left","style":{"typography":{"fontSize":"0.8rem"}}} -->
-<p class="has-text-align-left" style="font-size:0.8rem"><?php
-	/* Translators: WordPress link. */
-	$wordpress_link = '<a href="' . esc_url( __( 'https://wordpress.org', 'iotix' ) ) . '" rel="nofollow">WordPress</a>';
+<p class="has-text-align-left" style="font-size:0.8rem">
+<?php
+	$wordpress_link = '<a href="' . esc_url( __( 'https://wordpress.org', 'trewe-iotix' ) ) . '" rel="nofollow">WordPress</a>';
 	echo sprintf(
-		esc_html__( 'Designed with %1$s', 'iotix' ),
+		/* translators: %1$s: WordPress link. */
+		esc_html__( 'Designed with %1$s', 'trewe-iotix' ),
 		$wordpress_link
 	);
-?></p>
+	?>
+	</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:navigation {"ariaLabel":"<?php esc_attr_e( 'Footer', 'iotix' ); ?>","overlayMenu":"never","layout":{"type":"flex","orientation":"horizontal"},"style":{"spacing":{"blockGap":"var:preset|spacing|40"}}} /--></div>
+<!-- wp:navigation {"ariaLabel":"<?php esc_attr_e( 'Footer', 'trewe-iotix' ); ?>","overlayMenu":"never","layout":{"type":"flex","orientation":"horizontal"},"style":{"spacing":{"blockGap":"var:preset|spacing|40"}}} /--></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->

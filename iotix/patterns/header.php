@@ -2,7 +2,7 @@
 <?php
 /**
  * Title: header
- * Slug: iotix/header
+ * Slug: trewe-iotix/header
  * Categories: hidden
  * Inserter: no
  */
@@ -12,11 +12,11 @@
 <div class="wp-block-group alignwide" style="padding-top:40px;padding-right:0;padding-bottom:40px;padding-left:0"><!-- wp:site-title /-->
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-<div class="wp-block-group" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:navigation {"ariaLabel":"<?php esc_attr_e( 'Primary', 'iotix' ); ?>","layout":{"type":"flex","justifyContent":"left","orientation":"horizontal"}} /-->
+<div class="wp-block-group" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:navigation {"ariaLabel":"<?php esc_attr_e( 'Primary', 'trewe-iotix' ); ?>","layout":{"type":"flex","justifyContent":"left","orientation":"horizontal"}} /-->
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"fontSize":"small"} -->
-<div class="wp-block-button has-custom-font-size has-small-font-size"><a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Sign In', 'iotix' ); ?></a></div>
+<div class="wp-block-button has-custom-font-size has-small-font-size"><a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Sign In', 'trewe-iotix' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>

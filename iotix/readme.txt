@@ -1,16 +1,22 @@
-=== Iotix ===
-Contributors: Automattic
+=== Trewe Iotix ===
+Contributors: Trewe
 Requires at least: 5.8
 Tested up to: 7.1
 Requires PHP: 7.4
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License: GPLv3 or later
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
 == Description ==
 
-Iotix provides a great starting point for creating a business or startup website. It offers tailored templates and patterns, including a business landing page, blog, and pricing sections, to help you present yourself and your business more quickly and easily. With Iotix, you can create a professional and polished website that accurately reflects your brand and effectively communicates your message to your target audience.
+Trewe Iotix is a Trewe-maintained fork of Automattic's Iotix theme. It provides a great starting point for creating a business or startup website, with tailored templates and patterns, including a business landing page, blog, and pricing sections, to help you present yourself and your business more quickly and easily. With Trewe Iotix, you can create a professional and polished website that accurately reflects your brand and effectively communicates your message to your target audience.
 
 == Changelog ==
+
+= 2.0.0 =
+* Forked as Trewe Iotix. Theme Name, Author, Theme/Author URIs, and Text Domain (`iotix` -> `trewe-iotix`, updated in every translation call site and pattern slug: `iotix/xxx` -> `trewe-iotix/xxx`) now reflect Trewe's ownership of this fork.
+* Relicensed GPLv2-or-later -> GPLv3-or-later, exercising the "or later" clause already present in Iotix's original license grant. Verified before relicensing: every bundled third-party asset (fonts under the SIL Open Font License 1.1, photos under CC0) is license-version-agnostic, so nothing blocks the upgrade. Added this theme's own `LICENSE` file (the full GPLv3 text) alongside the repo's existing GPLv2 `LICENSE`, which continues to cover the unrelated themes still in this monorepo checkout.
+* Automattic's original copyright notice is preserved in the Copyright section below, per the GPL's requirement to keep existing notices intact; a new notice for Trewe's copyright in the modifications has been added alongside it, and this changelog itself serves as the record of what changed, where, and when, per GPLv2/v3 Section 2(a)'s "prominent notices" requirement for modified files.
+* Internal CSS/JS implementation details (the `iotix-*` class name prefix used throughout `style.css`, the pattern files, and `assets/js/motion.js`) were deliberately left unchanged — they're not part of the theme's public identity, so renaming them would just be unnecessary churn.
 
 = 1.0.17 =
 * Full-theme accessibility audit beyond the homepage/hero. Three real findings, all fixed:
@@ -96,18 +102,27 @@ Iotix provides a great starting point for creating a business or startup website
 
 == Copyright ==
 
-Iotix WordPress Theme, (C) 2022 Automattic
-Iotix is distributed under the terms of the GNU GPL.
+Trewe Iotix WordPress Theme, Copyright (C) 2022 Automattic, Copyright (C) 2026 Trewe.
+Trewe Iotix is distributed under the terms of the GNU GPL.
+
+Trewe Iotix is a fork of Automattic's Iotix WordPress Theme. Automattic's original
+copyright notice above is retained, as required by the GPL. Iotix was originally
+licensed "GPLv2 or later" (see the version history above); exercising that "or later"
+option, this fork and all of its modifications are released under, and the combined
+work is now distributed under, the terms below.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 2 of the License, or
+the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
 
 This program is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program. If not, see <https://www.gnu.org/licenses/>.
 
 This theme bundles the following third-party resources:
 
