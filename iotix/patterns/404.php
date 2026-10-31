@@ -2,7 +2,7 @@
 <?php
 /**
  * Title: 404
- * Slug: iotix/404
+ * Slug: trewe-iotix/404
  * Categories: hidden
  * Inserter: no
  */
@@ -11,7 +11,7 @@
 
 <!-- wp:group {"tagName":"main","style":{"spacing":{"padding":{"right":"5vw","left":"5vw"}}},"layout":{"type":"constrained"}} -->
 <main class="wp-block-group" style="padding-right:5vw;padding-left:5vw"><!-- wp:image {"sizeSlug":"full","linkDestination":"none","align":"wide","style":{"border":{"radius":"30px"}}} -->
-<figure class="wp-block-image alignwide size-full has-custom-border"><img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/images/404_Image.webp" alt="<?php esc_html_e('', 'iotix');?>" class="" style="border-radius:30px"/></figure>
+<figure class="wp-block-image alignwide size-full has-custom-border"><img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/images/404_Image.webp" alt="" class="" style="border-radius:30px"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:spacer {"height":"40px"} -->
@@ -20,14 +20,14 @@
 
 <!-- wp:group {"layout":{"type":"default"}} -->
 <div class="wp-block-group"><!-- wp:heading {"textAlign":"left","fontSize":"x-large"} -->
-<h2 class="wp-block-heading has-text-align-left has-x-large-font-size" id="oops-that-page-can-t-be-found"><?php esc_html_e('Page not found.', 'iotix');?></h2>
+<h2 class="wp-block-heading has-text-align-left has-x-large-font-size" id="oops-that-page-can-t-be-found"><?php esc_html_e( 'Page not found.', 'trewe-iotix' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e('It looks like nothing was found at this location. Maybe try a search?', 'iotix');?></p>
+<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try a search?', 'trewe-iotix' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:search {"label":"<?php esc_html_e( 'Search', 'iotix' ); ?>","showLabel":false,"placeholder":"<?php esc_html_e( 'Search...', 'iotix' ); ?>","widthUnit":"%","buttonText":"<?php esc_html_e( 'Search', 'iotix' ); ?>","style":{"border":{"radius":"100px"}},"backgroundColor":"foreground"} /--></div>
+<!-- wp:search {"label":"<?php esc_html_e( 'Search', 'trewe-iotix' ); ?>","showLabel":false,"placeholder":"<?php esc_html_e( 'Search...', 'trewe-iotix' ); ?>","widthUnit":"%","buttonText":"<?php esc_html_e( 'Search', 'trewe-iotix' ); ?>","style":{"border":{"radius":"100px"}},"backgroundColor":"foreground"} /--></div>
 <!-- /wp:group -->
 
 <!-- wp:spacer -->

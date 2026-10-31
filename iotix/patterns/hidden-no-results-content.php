@@ -2,7 +2,7 @@
 <?php
 /**
  * Title: Hidden No Results Content
- * Slug: iotix/hidden-no-results-content
+ * Slug: trewe-iotix/hidden-no-results-content
  * Inserter: no
  */
 ?>

@@ -2,7 +2,7 @@
 <?php
 /**
  * Title: search
- * Slug: iotix/search
+ * Slug: trewe-iotix/search
  * Categories: hidden
  * Inserter: no
  */
@@ -21,7 +21,7 @@
 <div class="wp-block-group alignwide"><!-- wp:query-title {"type":"search","align":"wide","style":{"spacing":{"padding":{"bottom":"20px"}}},"fontSize":"x-large"} /-->
 
 <!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
-<div class="wp-block-group alignwide"><!-- wp:search {"showLabel":false,"placeholder":"<?php esc_html_e( 'Search...', 'iotix'); ?>","widthUnit":"%","buttonText":"<?php esc_html_e( 'Search', 'iotix'); ?>","style":{"border":{"radius":"100px"}},"backgroundColor":"foreground"} /-->
+<div class="wp-block-group alignwide"><!-- wp:search {"showLabel":false,"placeholder":"<?php esc_html_e( 'Search...', 'trewe-iotix' ); ?>","widthUnit":"%","buttonText":"<?php esc_html_e( 'Search', 'trewe-iotix' ); ?>","style":{"border":{"radius":"100px"}},"backgroundColor":"foreground"} /-->
 
 <!-- wp:spacer {"height":"40px"} -->
 <div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
@@ -31,7 +31,7 @@
 
 <!-- wp:query-no-results -->
 <!-- wp:paragraph -->
-<p><?php esc_html_e('Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'iotix');?></p>
+<p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'trewe-iotix' ); ?></p>
 <!-- /wp:paragraph -->
 <!-- /wp:query-no-results -->
 
@@ -46,7 +46,7 @@
 
 <!-- wp:post-title {"isLink":true,"style":{"elements":{"link":{"color":{"text":"var:preset|color|primary"}}}}} /-->
 
-<!-- wp:post-excerpt {"moreText":"<?php esc_html_e( 'Read article →', 'iotix'); ?>"} /-->
+<!-- wp:post-excerpt {"moreText":"<?php esc_html_e( 'Read article →', 'trewe-iotix' ); ?>"} /-->
 
 <!-- wp:spacer {"height":"40px"} -->
 <div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
